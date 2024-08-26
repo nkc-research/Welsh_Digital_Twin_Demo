@@ -37,18 +37,18 @@
             height: calc(100vh - 150px); /* Adjust the map container to fit within the screen minus header and footer */
         }
     </style>
-    <script>
-        function loadMap() {
-            fetch('map.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('map').innerHTML = data;
-                })
-                .catch(error => console.error('Error loading the map:', error));
-        }
+<!--    <script>-->
+<!--        function loadMap() {-->
+<!--            fetch('map.html')-->
+<!--                .then(response => response.text())-->
+<!--                .then(data => {-->
+<!--                    document.getElementById('map').innerHTML = data;-->
+<!--                })-->
+<!--                .catch(error => console.error('Error loading the map:', error));-->
+<!--        }-->
 
-        window.onload = loadMap;
-    </script>
+<!--        window.onload = loadMap;-->
+<!--    </script>-->
 </head>
 <body>
 
@@ -58,8 +58,8 @@
         <img src="swansea-university.png" alt="Logo 2">
     </div>
 
-    <div class="map-container" id="map">
-        <!-- The map content will be loaded here dynamically -->
+    <div class="map-container">
+        <iframe src="map.html"></iframe>
     </div>
 
     <div class="footer">
