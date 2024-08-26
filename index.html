@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Map Title</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .title-bar {
+            background-color: #4CAF50;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+        .title-bar img {
+            height: 40px;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+        }
+        .map-container {
+            margin-top: 50px; /* Adjust based on title bar height */
+            margin-bottom: 100px; /* Adjust based on footer height */
+            position: relative;
+            height: calc(100vh - 150px); /* Adjust the map container to fit within the screen minus header and footer */
+        }
+    </style>
+    <script>
+        function loadMap() {
+            fetch('map.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('map').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading the map:', error));
+        }
+
+        window.onload = loadMap;
+    </script>
+</head>
+<body>
+
+    <div class="title-bar">
+        <img src="WDTN_Logo_RGB.png" alt="Logo 1">
+        <h1>Your Map Title</h1>
+        <img src="swansea-university.png" alt="Logo 2">
+    </div>
+
+    <div class="map-container" id="map">
+        <!-- The map content will be loaded here dynamically -->
+    </div>
+
+    <div class="footer">
+        <p>Disclaimer: Your disclaimer text here.</p>
+        <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+    </div>
+
+</body>
+</html>
