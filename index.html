@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Map Title</title>
+    <title>YWelsh Digital Twin Demo</title>
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
         }
         .title-bar {
             background-color: #4CAF50;
@@ -16,6 +19,8 @@
             justify-content: space-between;
             align-items: center;
             color: white;
+            flex-shrink: 0;
+            z-index: 2;
         }
         .title-bar img {
             height: 40px;
@@ -25,16 +30,13 @@
             color: white;
             text-align: center;
             padding: 20px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-            left: 0;
+            flex-shrink: 0;
+            z-index: 2;
         }
-
-       .map-container {
+        .map-container {
             flex-grow: 1;
             position: relative;
-            overflow: hidden;
+            z-index: 1;
         }
         iframe {
             width: 100%;
@@ -43,6 +45,7 @@
             position: absolute;
             top: 0;
             left: 0;
+            z-index: 1;
         }
     </style>
 <!--    <script>-->
