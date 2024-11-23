@@ -14,7 +14,7 @@
             background-color: #f4f4f9;
         }
         header {
-            background: #005f99;
+            background: #4CAF50;
             color: #fff;
             padding: 1rem 0;
             text-align: center;
@@ -43,23 +43,25 @@
     </header>
     <div class="container">
         <h2>Overview</h2>
-        <p>The Minimum Viable Twin (MVT) combines data from **StatsWales**, the Office for National Statistics (ONS), and NHS Wales to create a synthetic yet realistic representation of regional populations. This digital twin empowers councils, healthcare providers, and planners to simulate scenarios, model future developments, and make data-driven decisions.</p>
+        <p>The Minimum Viable Twin (MVT) combines data from StatsWales, the Office for National Statistics (ONS), and NHS Wales to create a synthetic yet realistic representation of regional populations. This digital twin empowers councils, healthcare providers, and planners to simulate scenarios, model future developments, and make data-driven decisions.</p>
+        <p><strong>Interactive Energy Map:</strong> The main platform integrates energy data from approximately 2,000 points across Wales. This data, sourced from National Grid (South Wales) and SP Energy Networks (North Wales), provides an overview of dynamic energy usage patterns, enabling precise infrastructure planning and analysis.</p>
         
         <h2>How Synthetic Data Represents Real Populations</h2>
-        <p>The MVT uses synthetic data generation techniques to create virtual populations. While the data is not tied to any specific individual, it is derived from aggregated public datasets such as:</p>
+        <p>The MVT uses synthetic data generation techniques to create virtual populations. While the data is not tied to any specific individual, it is derived from core public datasets such as:</p>
         <ul>
             <li>Population demographics from StatsWales and ONS.</li>
             <li>Health statistics from NHS Wales.</li>
-            <li>Energy efficiency and housing data for specific regions.</li>
+            <li>Energy efficiency and housing data for specific regions (council data).</li>
         </ul>
-        <p>The synthesis process involves aligning real-world statistics, such as age distributions, employment rates, and health conditions, to generate a population that mirrors the real demographics of an area.</p>
+        <p>The synthesis process involves aligning real-world statistics, such as age distributions, employment rates, and health conditions, to generate a population that mirrors the real demographics of an area (LSOA).</p>
         <p><strong>Why this is valuable:</strong> The synthetic population allows comprehensive analysis without compromising individual privacy while retaining statistical accuracy.</p>
 
         <h2>Key Features</h2>
         <ul>
             <li><strong>Data Integration:</strong> Combines demographic, health, and geographical data from StatsWales, ONS, and NHS Wales.</li>
             <li><strong>Virtual Population:</strong> Models synthetic individuals with realistic attributes, including age, gender, employment status, and health conditions.</li>
-            <li><strong>Dynamic Updates:</strong> Integrates updated datasets for evolving scenarios such as population shifts or new healthcare challenges.</li>
+            <li><strong>Dynamic Updates:</strong> Integrates dynamically updated datasets for evolving scenarios such as population shifts or new healthcare challenges.</li>
+            <li><strong>Energy Visualisation:</strong> Displays dynamic energy usage data from National Grid and SP Energy Networks to monitor demand trends in real time.</li>
         </ul>
 
         <h2>Use Cases</h2>
@@ -69,21 +71,23 @@
             <li><strong>Infrastructure Development:</strong> Model housing and energy demand to support sustainable development goals.</li>
             <li><strong>Transportation Modelling:</strong> Analyse commuting trends and improve public transport efficiency.</li>
             <li><strong>Emergency Response:</strong> Identify vulnerable populations and enhance disaster preparedness.</li>
+            <li><strong>Energy Infrastructure:</strong> Use real-time energy data to plan grid expansions, optimise renewable energy deployment, and manage peak demand.</li>
         </ul>
 
-        <h3>Example: Dynamic Energy Efficiency Insights</h3>
+        <h3>Example: Dynamic Energy Insights</h3>
         <div class="example">
-            <p>Using data from StatsWales, councils can monitor and act on housing energy efficiency trends:</p>
+            <p>The energy map allows councils to monitor real-time usage and efficiency trends:</p>
             <ul>
-                <li><strong>Region A:</strong> 50% of households with energy ratings below C. Recommendation: Prioritise insulation programmes.</li>
-                <li><strong>Region B:</strong> High prevalence of flats with inefficient heating systems. Recommendation: Implement community heating projects.</li>
+                <li><strong>South Wales:</strong> 35% of grid points show increased peak demand during winter evenings. Recommendation: Expand local storage solutions and promote demand-side response programmes.</li>
+                <li><strong>North Wales:</strong> 40% of monitored households with energy ratings below C. Recommendation: Prioritise insulation and efficiency retrofits in these areas.</li>
+                <li><strong>Combined Insights:</strong> Identify areas with both high demand and low energy efficiency to guide infrastructure upgrades and renewable energy investments.</li>
             </ul>
         </div>
 
         <h3>Dynamic Data Loading</h3>
         <p>The MVT supports integration of updated statistics and live data feeds, allowing real-time decision-making. For example:</p>
         <ul>
-            <li><strong>Real-Time Monitoring:</strong> Track trends in healthcare utilisation or housing demand.</li>
+            <li><strong>Real-Time Monitoring:</strong> Track trends in energy usage, healthcare utilisation, or housing demand.</li>
             <li><strong>Scenario Modelling:</strong> Simulate the impact of policy changes, such as increased public transport funding or energy retrofit programmes.</li>
         </ul>
 
@@ -92,6 +96,7 @@
             <li><strong>Data-Driven Insights:</strong> Enable councils and healthcare providers to base decisions on evidence, improving outcomes.</li>
             <li><strong>Privacy Preservation:</strong> Synthetic data ensures no individual is identifiable while retaining statistical accuracy.</li>
             <li><strong>Long-Term Planning:</strong> Supports scenario-based analysis for future-proofing infrastructure and healthcare strategies.</li>
+            <li><strong>Energy Resilience:</strong> Empower energy planners with granular usage data to reduce grid stress and improve efficiency.</li>
         </ul>
 
         <h2>How It Works</h2>
@@ -99,11 +104,11 @@
         <ul>
             <li><strong>Data Collection:</strong> Public data sources, such as StatsWales, are used to gather regional statistics.</li>
             <li><strong>Synthetic Generation:</strong> Virtual populations are created using statistical models that align with real-world demographic distributions.</li>
-            <li><strong>Dynamic Updates:</strong> The system can integrate new datasets, such as census updates or live NHS data, to maintain relevance.</li>
+            <li><strong>Dynamic Updates:</strong> The system can integrate new datasets, such as census updates, live NHS data, or energy usage reports, to maintain relevance.</li>
         </ul>
 
         <h2>Conclusion</h2>
-        <p>The Minimum Viable Twin provides a powerful tool for councils and the NHS to engage in both real-time and long-term planning. By using synthetic yet statistically accurate data, decision-makers can improve resource allocation, enhance resilience, and plan for future growth and challenges.</p>
+        <p>The Minimum Viable Twin provides a powerful tool for councils and the NHS to engage in both real-time and long-term planning. By integrating synthetic population data and dynamic energy insights, decision-makers can improve resource allocation, enhance resilience, and plan for future growth and challenges.</p>
     </div>
 </body>
 </html>
